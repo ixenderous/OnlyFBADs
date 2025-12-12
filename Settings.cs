@@ -15,5 +15,10 @@ namespace OnlyFBADs
         {
             description = "Regular BADs will also give pops."
         };
+
+        public static readonly ModSettingBool PatchNinjagon = new(false)
+        {
+            description = "While enabled, disables Ninjagon's Grand Sabo passive in sandbox to stop it gaining pops from non (F)BADs. ModEnabled must also be true. Applies when joining a match."
+        };
     }
 }
