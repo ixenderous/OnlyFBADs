@@ -6,7 +6,9 @@
 OnlyFBADs
 </h1>
 
-While enabled, only FBADs will spawn in sandbox rounds. Optional toggle to also allow regular BADs.
+While enabled, only FBADs will give pops in sandbox mode. Optional toggle for regular BADs to also give pops. Ideal for freeplay damage testing.
+
+Grand Sabo/Ninjagon will still gain pops. Might fix later.
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
 

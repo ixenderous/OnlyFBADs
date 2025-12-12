@@ -8,12 +8,12 @@ namespace OnlyFBADs
     {
         public static readonly ModSettingBool ModEnabled = new(true)
         {
-            description = "While enabled, only FBADs will spawn in sandbox rounds."
+            description = "While enabled, only FBADs will give pops in sandbox."
         };
 
         public static readonly ModSettingBool IncludeRegularBads = new(false)
         {
-            description = "Also allow regular BADs to spawn."
+            description = "Regular BADs will also give pops."
         };
     }
 }

@@ -22,16 +22,15 @@ public class OnlyFBADs : BloonsTD6Mod
     {
         base.OnBloonEmitted(spawner, bloonModel, round, index, startingDist, ref bloon);
 
-        if (Settings.ModEnabled && InGameData.CurrentGame.IsSandbox)
-        {
-            bool isFBAD = bloonModel.name == "BadFortified";
-            bool isBAD = bloonModel.name == "Bad";
+        if (!Settings.ModEnabled || !InGameData.CurrentGame.IsSandbox)
+            return;
 
-            // not an FBAD and (not including regular BADs or not a regular BAD)
-            if (!isFBAD && (!Settings.IncludeRegularBads || !isBAD))
-            {
-                bloon.Destroy();
-            }
+        bool isFBAD = bloonModel.name == "BadFortified";
+        bool isBAD = bloonModel.name == "Bad";
+        
+        if (!isFBAD && !(Settings.IncludeRegularBads && isBAD))
+        {
+            bloon.lowestLayerNumber = 0;
         }
     }
 }
