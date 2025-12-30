@@ -20,5 +20,10 @@ namespace OnlyFBADs
         {
             description = "While enabled, disables Ninjagon's Grand Sabo passive in sandbox to stop it gaining pops from non (F)BADs. ModEnabled must also be true. Applies when joining a match."
         };
+
+        public static readonly ModSettingBool DeleteSubBads = new(false)
+        {
+            description = "Prevents bloons other than (F)BADs from spawning naturally, instead of preventing them from giving pops."
+        };
     }
 }

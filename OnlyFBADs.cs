@@ -58,7 +58,13 @@ public class OnlyFBADs : BloonsTD6Mod
         
         if (!isFBAD && !(Settings.IncludeRegularBads && isBAD))
         {
-            bloon.lowestLayerNumber = 0;
+            if (Settings.DeleteSubBads)
+            {
+                bloon.Destroy();
+            } else
+            {
+                bloon.lowestLayerNumber = 0;
+            }
         }
     }
 }
