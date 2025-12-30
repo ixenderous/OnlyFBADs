@@ -6,7 +6,7 @@
 OnlyFBADs
 </h1>
 
-While enabled, only FBADs will give pops in sandbox mode. Optional toggle for regular BADs to also give pops. Ideal for freeplay damage testing.
+While enabled, only FBADs will give pops in sandbox mode. Optional toggle for regular BADs to also give pops. Optional toggle to just delete sub bads instead of preventing them from giving pops. Ideal for freeplay damage testing.
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
 
